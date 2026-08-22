@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecurityActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/security_page_toolbar"
+            layout="@layout/app_bar_layout">
+
+        </include>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/our_vision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Security Information for Our Smart Car Parking App"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:justificationMode="inter_word"
+                />
+
+            <TextView
+                android:id="@+id/security_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/our_vision"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="13dp"
+                android:justificationMode="inter_word"
+                android:text="At Smart Park, the security and privacy of our
+users are paramount. We understand that when you entrust us with your personal
+and vehicle information, you expect it to be safeguarded diligently. We take
+this responsibility seriously and have implemented a robust set of security
+measures to ensure your data remains safe and secure. Here's an overview of
+our security practices:
+
+\n\n•Data Encryption: All data transmitted between your device and our servers is
+encrypted using industry-standard encryption protocols (SSL/TLS). This ensures that your information remains confidential during transmission.
+
+\n• Authentication and Authorization: Access to your account is protected through
+multi-factor authentication (MFA). Additionally, only authorized personnel have access to user data, and their access is strictly limited to what is necessary for their roles.
+
+\n• Data Storage: We store your data on secure servers with strict access controls.
+Our data centers adhere to industry best practices and are regularly audited for security compliance.
+
+\n• Privacy Settings: We give you control over your data through privacy settings.
+You can customize who can view your parking history, vehicle information, and other data.
+
+\n• Regular Security Audits: We conduct regular security audits and vulnerability
+assessments to identify and mitigate potential risks. Any security issues discovered are promptly addressed.
+
+\n• User Education: We educate our users on best practices for maintaining their
+account security. This includes tips on creating strong passwords, recognizing phishing attempts, and safeguarding their mobile devices.
+
+\n• Data Backups: Your data is regularly backed up to ensure its availability
+even in the event of unforeseen circumstances.
+
+\n• Data Deletion: You have the right to request the deletion of your account
+and associated data at any time, and we ensure that the process is carried out securely.
+
+\n• Legal Compliance: We comply with all relevant data protection laws and regulations,
+such as GDPR or CCPA, and are committed to protecting your privacy rights.
+
+\n• 24/7 Monitoring: Our security team monitors the app and infrastructure around
+the clock to detect and respond to any security incidents promptly.
+
+\n• Third-Party Partners: We carefully select and vet third-party partners and
+vendors to ensure they maintain the same high standards of security and privacy.
+
+\n• Security Updates: We regularly update our app to address security vulnerabilities
+\and provide users with the latest security features.
+
+\n\nWhile we take every precaution to protect your data, it's essential to remember
+that no system can be entirely immune to risks. We encourage you to follow good
+security practices, such as regularly updating your app, using strong passwords,
+and being cautious with the information you share online.
+
+\n\nYour trust is essential to us, and we remain committed to providing you with a
+safe and secure experience while using our Smart Car Parking App. If you have any
+security concerns or questions, please don't hesitate to contact our support
+team.
+
+\n\nThank you for choosing Smart Park for your smart car parking needs.
+
+\n\nSincerely,
+
+\n\nYour Last Moment
+"/>
+            <TextView
+                android:id="@+id/copyright"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/security_text"
+                android:layout_marginTop="30dp"
+                android:textAlignment="center"
+                android:textSize="10dp"
+                android:text="© [2023] [Fiji National University]. All Rights Reserved.\n"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

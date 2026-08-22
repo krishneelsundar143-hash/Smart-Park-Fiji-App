@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Security"
+        android:id="@+id/main_security_option"
+        app:showAsAction="never"
+        >
+    </item>
+
+    <item
+        android:title="Profile Settings"
+        android:id="@+id/main_settings_option"
+        android:icon="@drawable/settings_icon"
+        app:showAsAction="never"
+        >
+    </item>
+
+    <item
+        android:title="Feedback"
+        android:id="@+id/main_feedback_option"
+        app:showAsAction="never"
+        >
+    </item>
+
+    <item
+        android:title="Logout"
+        android:id="@+id/main_logout_option"
+        app:showAsAction="never"
+        >
+    </item>
+
+</menu>

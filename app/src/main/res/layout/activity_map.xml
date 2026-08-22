@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/map_page_toolbar"
+            layout="@layout/app_bar_layout">
+
+        </include>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/light_steel_blue">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:justificationMode="inter_word"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:text="Get step-by-step directions with a single tap – Open Google Map!"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_below="@id/text"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/google_map"
+                />
+
+            <!-- Define a Button with the ID openMapButton -->
+            <Button
+                android:id="@+id/openMapButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image"
+                android:layout_centerInParent="true"
+                android:text="Open Google Map"
+                android:textColor="@color/white"
+                android:background="@drawable/buttons"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="50dp"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

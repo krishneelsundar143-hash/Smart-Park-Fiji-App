@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_cyan"
+    tools:context=".BookActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/light_cyan">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/slotLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="6dp"
+                android:text=""
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/fullNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/slotLabelTextView"
+                android:layout_marginTop="13dp"
+                android:textStyle="bold"
+                android:text="Full Name:" />
+
+    <!-- Full Name -->
+    <EditText
+        android:id="@+id/fullNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:textColor="@color/black"
+        android:background="@drawable/inputs"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="@color/lavender"
+        android:layout_below="@id/fullNameLabel"/>
+
+            <!-- Vehicle Number Label -->
+            <TextView
+                android:id="@+id/textViewVehicleNumberLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullNameEditText"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:text="Vehicle Number:" />
+
+            <!-- Vehicle Number Edit Text -->
+            <EditText
+                android:id="@+id/vehicleNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewVehicleNumberLabel"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/inputs"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:padding="5dp"
+                android:backgroundTint="@color/lavender"
+                android:hint="Vehicle Number"/>
+
+            <Button
+                android:id="@+id/datePickerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@id/vehicleNumberEditText"
+                android:layout_alignEnd="@id/vehicleNumberEditText"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/lavender"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:background="@drawable/home_button"
+                android:text="Pick Date" />
+
+            <TextView
+                android:id="@+id/selectedDateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vehicleNumberEditText"
+                android:text="Date: "
+                android:textStyle="bold"
+                android:layout_marginTop="26dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="5dp"/>
+
+            <TextView
+                android:id="@+id/selectedDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vehicleNumberEditText"
+                android:layout_toRightOf="@id/selectedDateLabel"
+                android:text=""
+                android:textSize="16sp"
+                android:layout_marginTop="26dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="16dp"/>
+
+
+            <!-- Time Label -->
+    <TextView
+        android:id="@+id/textViewTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectedDateTextView"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:text="Time:" />
+
+    <!-- Time Dropdown -->
+    <Spinner
+        android:id="@+id/timeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/textViewTimeLabel" />
+
+    <!-- Hours Label -->
+    <TextView
+        android:id="@+id/textViewHoursLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeSpinner"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:text="Hours:" />
+
+    <!-- Hours Dropdown -->
+    <Spinner
+        android:id="@+id/hourSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@id/textViewHoursLabel"
+        android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/payLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hourSpinner"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:text="Total Fee: "/>
+
+            <TextView
+                android:id="@+id/amountLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hourSpinner"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_toRightOf="@id/payLabel"
+                android:textStyle="bold"
+                android:text=""/>
+
+            <EditText
+                android:id="@+id/paymentAmountEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/amountLabel"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/inputs"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/lavender"
+                android:hint="Enter Amount"/>
+
+
+    <TextView
+        android:id="@+id/paymentLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paymentAmountEditText"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:text="Payment Method"/>
+
+    <Spinner
+        android:id="@+id/paymentOptionsSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@id/paymentLabel"
+        android:layout_marginTop="2dp">
+        <!-- Populate this Spinner with payment options, e.g., MasterCard, Visa, etc. -->
+    </Spinner>
+
+    <EditText
+        android:id="@+id/cardNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paymentOptionsSpinner"
+        android:hint="Mobile Number"
+        android:background="@drawable/inputs"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/lavender"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/pinEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardNumberEditText"
+        android:hint="PIN"
+        android:background="@drawable/inputs"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:backgroundTint="@color/lavender"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:inputType="numberPassword" />
+
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pinEditText"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttons"
+        android:text="Submit Booking"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+
+    <!-- TextView to display the receipt -->
+    <TextView
+        android:id="@+id/receiptTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submitButton"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="@color/green"
+        />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

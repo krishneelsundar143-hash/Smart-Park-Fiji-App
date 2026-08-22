@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Smart Park</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="times_array">
+        <item>8:00 AM</item>
+        <item>9:00 AM</item>
+        <item>10:00 AM</item>
+        <item>11:00 AM</item>
+        <item>12:00 PM</item>
+        <item>1:00 PM</item>
+        <item>2:00 PM</item>
+        <item>3:00 PM</item>
+        <item>4:00 PM</item>
+        <item>5:00 PM</item>
+        <item>6:00 PM</item>
+        <item>7:00 PM</item>
+        <item>8:00 PM</item>
+        <item>9:00 PM</item>
+        <item>10:00 PM</item>
+        <item>11:00 PM</item>
+        <!-- Add more time options as needed -->
+    </string-array>
+
+    <string-array name="hours_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <!-- Add more hour options as needed -->
+    </string-array>
+
+    <string-array name="payment_options_array">
+        <item>M-Paisa</item>
+        <item>MyCash</item>
+        <item>Visa Card</item>
+        <item>Master Card</item>
+        <!-- Add more hour options as needed -->
+    </string-array>
+
+
+</resources>

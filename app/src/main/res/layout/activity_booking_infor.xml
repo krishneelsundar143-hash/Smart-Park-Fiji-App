@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingInforActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/booking_infor_page_toolbar"
+            layout="@layout/app_bar_layout">
+
+        </include>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:text="Welcome to Smart Park!"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+
+            <TextView
+                android:id="@+id/sub_title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Booking a Parking Slot:"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_below="@id/title"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/sub_title2_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/sub_title2"
+                android:textSize="13dp"
+                android:justificationMode="inter_word"
+                android:text="• Open the App: Launch Smart Park on your smartphone.
+\n• Find Parking: Use the app to search for available parking slots near your destination.
+\n• Check Slot Availability: Before booking, check if the desired parking slot is available (in the Booked Slots on Home screen). Slots that are already booked will be Unavailable.
+\n• Book a Slot: Once you've found an available slot, select it, and confirm your booking. You'll receive a confirmation with the slot details.
+\n• Payment: Pay for your booking securely using the payment method you wish.
+\n• Access Code: If required, you'll receive an access code or QR code on the app. Use this code to enter and exit the parking area."/>
+
+            <TextView
+                android:id="@+id/sub_title3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Before You Park:"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_below="@id/sub_title2_text"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/sub_title3_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/sub_title3"
+                android:textSize="13dp"
+                android:justificationMode="inter_word"
+                android:text="Before you head to the parking area, make sure to:
+\n\n• Check Your Booking: Confirm your booking details, including the date, time, and location.
+\n• Navigation: Use the app's navigation feature to guide you to the parking area.
+\n• Access Code (if applicable): Ensure you have the access code or QR code ready for a hassle-free entry."/>
+
+            <TextView
+                android:id="@+id/sub_title4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Enjoy Your Parking Experience:"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_below="@id/sub_title3_text"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/sub_title4_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/sub_title4"
+                android:textSize="13dp"
+                android:justificationMode="inter_word"
+                android:text="We hope you have a convenient and stress-free parking experience using Smart Park. If you encounter any issues or have questions, our customer support team is here to assist you.
+\n\nThank you for choosing Smart Park for your smart car parking needs!"/>
+
+
+            <TextView
+                android:id="@+id/copyright"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sub_title4_text"
+                android:layout_marginTop="30dp"
+                android:textAlignment="center"
+                android:textSize="10dp"
+                android:text="© [2023] [Fiji National University]. All Rights Reserved.\n"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

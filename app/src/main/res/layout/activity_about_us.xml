@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/about_us_page_toolbar"
+            layout="@layout/app_bar_layout">
+
+        </include>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/light_sky_blue">
+
+
+        <TextView
+            android:id="@+id/team_members"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Team Members"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/sundar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/team_members"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/sundar"/>
+
+        <TextView
+            android:id="@+id/sundar_text"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/sundar"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="5dp"
+            android:text="(krishneel Sundar)\nSoftware Developer"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_marginBottom="0dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/farah"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/team_members"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/farah"/>
+
+        <TextView
+            android:id="@+id/farah_text"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/farah"
+            android:layout_toRightOf="@id/sundar_text"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="5dp"
+            android:justificationMode="inter_word"
+            android:text="(Farah Aiyub)\nTechnical Writer"
+            android:textColor="@color/black"
+            android:textAlignment="center"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/avi"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/team_members"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/avi"/>
+
+                <TextView
+                    android:id="@+id/avi_text"
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/avi"
+                    android:layout_toRightOf="@id/farah_text"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="5dp"
+                    android:justificationMode="inter_word"
+                    android:text="(Aviraal Prasad)\nUI/UX Designer"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/frances"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/sundar_text"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/frances"/>
+
+                <TextView
+                    android:id="@+id/frances_text"
+                    android:layout_width="130dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/frances"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="5dp"
+                    android:text="(Frances)\nDocumentation"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="0dp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ashlin"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/sundar_text"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="70dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ashlin"/>
+
+                <TextView
+                    android:id="@+id/ashlin_text"
+                    android:layout_width="130dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/ashlin"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginTop="5dp"
+                    android:text="(Ashlin Prasad)\nDocumentation"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="5dp"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/about_us_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardview"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="13dp"
+        android:justificationMode="inter_word"
+        android:text="Welcome to SmartPark, your ultimate solution for
+stress-free and efficient parking in the modern world. At SmartPark, we
+are committed to revolutionizing the way you park your vehicle, making
+urban mobility smoother, safer, and more convenient than ever before."/>
+
+    <TextView
+        android:id="@+id/our_vision"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/about_us_text"
+        android:text="Our Vision"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:id="@+id/our_vision_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/our_vision"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="13dp"
+        android:justificationMode="inter_word"
+        android:text= "Our vision is simple yet powerful: to create a world
+where finding a parking spot is no longer a hassle. We believe that
+technology can transform the parking experience, and we are dedicated
+to bringing that transformation to your fingertips."/>
+
+    <TextView
+        android:id="@+id/what_we_do"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/our_vision_text"
+        android:text="What We Do"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:id="@+id/what_we_do_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/what_we_do"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="13dp"
+        android:justificationMode="inter_word"
+        android:text= "SmartPark's primary mission is to save you time, money, and frustration while parking. Our cutting-edge mobile app connects drivers with available parking spaces in real-time, taking the guesswork out of the equation.
+        \nHere's how we do it:
+\n• Real-Time Parking Availability: Our app provides up-to-the-minute information on parking availability in your vicinity. No more circling the block or wasting time searching for a spot.
+\n• Convenient Reservation: Reserve your parking space in advance, ensuring a hassle-free experience upon arrival. Whether it's a quick stop at the grocery store or a day in the city, SmartPark has you covered.
+\n• Secure and Cashless Payments: Pay for your parking through the app, eliminating the need for physical cash and providing a secure, contactless transaction.
+\n• Navigation Assistance: Get turn-by-turn directions to your chosen parking spot, reducing stress and making your parking experience seamless.
+\n• Feedback and Ratings: Share your experiences and help fellow drivers by leaving ratings and reviews for parking locations."/>
+
+        <TextView
+            android:id="@+id/join_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/what_we_do_text"
+            android:text="Join Us on the Journey"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            />
+
+        <TextView
+            android:id="@+id/join_us_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/join_us"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="13dp"
+            android:justificationMode="inter_word"
+            android:text= "We invite you to join us on this exciting journey
+towards a smarter, more connected urban environment. Together, we can transform
+the way we think about parking and contribute to a future where parking woes
+are a thing of the past.
+\nThank you for choosing SmartPark as your partner in urban mobility. We look forward to simplifying your parking experience, one spot at a time."/>
+
+        <TextView
+            android:id="@+id/contact_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/join_us_text"
+            android:text="Contact Us"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            />
+
+        <TextView
+            android:id="@+id/contact_us_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contact_us"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="13dp"
+            android:justificationMode="inter_word"
+            android:text= "Have questions or feedback? We'd love to hear from you!
+
+\n\nEmail: krishneelsundar143@gmail.com
+\nPhone: +679-2087430
+\nAddress: Suva, Fiji
+
+\n\nFollow us on social media for updates, tips, and special offers:
+
+\n\n• Facebook: @Krishneel Sundar
+\n• Twitter: @Krishneel Sundar
+\n• Instagram: @thisiskrishneelsundar
+\n\n SmartPark - Parking Made Simple, Smart, and Sustainable."/>
+
+
+
+        <TextView
+            android:id="@+id/copyright"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contact_us_text"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:textSize="10dp"
+            android:text="© [2023] [Fiji National University]. All Rights Reserved.\n"
+
+            />
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

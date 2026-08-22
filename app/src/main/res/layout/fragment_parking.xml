@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParkingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/damo_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/buttons"
+        android:textColor="@color/white"
+        android:text="Damodar City" />
+
+    <Button
+        android:id="@+id/rups"
+        android:layout_below="@id/damo_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/buttons"
+        android:textColor="@color/white"
+        android:text="Rups Mall Nakasi"/>
+
+    <Button
+        android:id="@+id/tapo_city"
+        android:layout_below="@id/rups"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/buttons"
+        android:textColor="@color/white"
+        android:text="Tapoos City"/>
+
+    <Button
+        android:id="@+id/mhcc"
+        android:layout_below="@id/tapo_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/buttons"
+        android:textColor="@color/white"
+        android:text="MHCC"/>
+
+</RelativeLayout>

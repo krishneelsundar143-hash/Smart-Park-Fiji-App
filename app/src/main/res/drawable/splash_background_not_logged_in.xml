@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Define the background drawable when the user is not logged in -->
+    <item android:drawable="@color/lavender" />
+    <!-- You can add other drawables or shapes here as needed -->
+</layer-list>
